@@ -1,5 +1,6 @@
 #  Burak Ivan
 ## JavaScript/Front-end
+
 ## My contact information:
 * phone number **+ 375293422007**
 * mail: *burakvany@gmail.com*
@@ -12,11 +13,12 @@ I work in production, I study at the university. I want to learn programming, I 
 ## *Skills:*
 
 1. GitHub
-2. Сodewars 
+2. Сodewars
 3. HTML
 4. CSS
 5. JS
 ____
+
 ## Code examples:
 ```
 function squareSum(numbers){
@@ -26,6 +28,7 @@ function squareSum(numbers){
 }
 ```
 ***
+
 ## Work experience:
 
 * [There is no robot experience, only this project](https://github.com/Ivantehn/rsschool-cv/blob/gh-pages/cv.md)
