@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'Georgia';
+    src: url('assets/fonts//georgia/Georgia.eot');
+    src: local('Georgia'),
+        url('assets/Georgia/Georgia.eot?#iefix') format('embedded-opentype'),
+        url('assets/Georgia/Georgia.woff') format('woff'),
+        url('assets/Georgia/Georgia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('assets/fonts/Arial/ArialMT.eot');
+    src: local('Arial'), local('ArialMT'),
+        url('assets/fonts/Arial/ArialMT.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Arial/ArialMT.woff') format('woff'),
+        url('assets/fonts/Arial/ArialMT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 html {
     font-size: 16px;
     scroll-behavior: smooth;
@@ -5,7 +28,7 @@ html {
 }
 
 body {
-    font-family: 'Inika', 'Inter';
+    font-family: 'Georgia', 'Arial';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -48,7 +71,7 @@ header {
     font-weight: 400;
     font-size: 35px;
     line-height: 110%;
-    letter-spacing: .06em;
+    letter-spacing: 0.01em;
     color: rgba(241, 205, 179, 1);
     padding-bottom: 7px;
 }
@@ -61,6 +84,8 @@ header {
     line-height: 15px;
     letter-spacing: .1em;
     color: #FFFFFF;
+    margin-left: 5px;
+    margin-top: 1px;
 }
 
 .header_nav {
@@ -108,17 +133,22 @@ header,
     height: 908px;
     display: flex;
     align-items: flex-end;
+    justify-content: center;
 }
 
 .Not_only_container {
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 93.7%;
 }
 
 .Not_only_content {
+    height: 322px;
     display: flex;
     flex-direction: column;
-    margin-left: 42px;
+    justify-content: space-between;
+    margin-bottom: 75px;
 }
 
 .Not_only_content h1 {
@@ -129,7 +159,7 @@ header,
     font-size: 44px;
     line-height: 130%;
     color: #FFFFFF;
-    width: 60%;
+    width: 65%;
 }
 
 .Not_only_content_p {
@@ -140,7 +170,7 @@ header,
     line-height: 160%;
     color: #CDCDCD;
     margin: 0px;
-    width: 100%;
+    width: 93%;
 }
 
 .Not_only_content_button {
@@ -167,16 +197,32 @@ header,
     height: 588px;
     background-color: #FFFFFF;
     display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .About_content {
+    height: 408px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-bottom: 20px;
+    width: 85%;
 }
 
 .About_container {
-    width: 32%;
+    width: 39.6%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.About_container h2 {
+    margin: 0;
+    width: 82%;
+    letter-spacing: 0.06em;
 }
 
 .About_container p {
@@ -186,6 +232,7 @@ header,
     font-size: 15px;
     line-height: 160%;
     color: #4C4C4C;
+    margin: 0;
 }
 
 .Our_Friends {
@@ -194,6 +241,8 @@ header,
     background: #F6F6F6;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .Our_Friends_subheader {
@@ -202,19 +251,23 @@ header,
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .Our_Friends_subheader h2 {
     margin: 0;
     text-align: center;
+    letter-spacing: 0.06em;
 }
 
 .Our_Friends_slider {
+    height: 62%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    gap: 15px;
 }
 
 .Our_Friends_button_learn {
@@ -230,6 +283,7 @@ header,
     line-height: 130%;
     letter-spacing: 0.06em;
     color: #292929;
+    margin-bottom: 8px;
 }
 
 .Our_Friends p {
@@ -244,21 +298,31 @@ header,
 }
 
 .Our_Friends_Katrine {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
 }
 
 .Our_Friends_Jennifer {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 0px 35px 0px 35px;
 }
 
 .Our_Friends_Woody {
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
 }
 
 .Our_Friends_button_left {
@@ -287,7 +351,7 @@ header,
     font-size: 17px;
     line-height: 130%;
     border: #F1CDB3;
-    ;
+    letter-spacing: 0.06em;
 }
 
 .Help {
@@ -300,16 +364,20 @@ header,
 }
 
 .Help_content {
+    height: 70%;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 16px;
+    justify-content: space-between;
 }
 
 .Help_content h2 {
     width: 25%;
     margin: 0;
     text-align: center;
+    letter-spacing: 0.06em;
 }
 
 .Help_content_list {
@@ -319,12 +387,16 @@ header,
     gap: 55px 120px;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 .Help_content_list li {
+    height: 113px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 }
 
 .Help_content_list p {
@@ -337,6 +409,7 @@ header,
     text-align: center;
     letter-spacing: 0.06em;
     color: #545454;
+    margin: 0px;
 }
 
 .In_addition {
@@ -344,19 +417,24 @@ header,
     background: #F6F6F6;
     display: flex;
     align-items: center;
-}
-
-.In_addition_content {
-    width: 100%;
-    display: flex;
-    align-items: center;
     justify-content: center;
 }
 
+.In_addition_content {
+    height: 61%;
+    width: 76%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
 .In_addition_information {
-    width: 27%;
+    height: 100%;
+    width: 39%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .In_addition_information h2 {
@@ -368,6 +446,7 @@ header,
     font-size: 35px;
     line-height: 130%;
     color: #545454;
+    letter-spacing: 0.06em;
 }
 
 .In_addition_information_name {
@@ -383,10 +462,11 @@ header,
 
 .In_addition_credit-card {
     height: 43px;
+    width: 92%;
     display: flex;
     background: #F1CDB3;
     border-radius: 9px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -398,6 +478,7 @@ header,
     line-height: 115%;
     letter-spacing: 0.06em;
     color: #545454;
+    margin: 0;
 }
 
 .In_addition_information_explanation {
@@ -407,6 +488,7 @@ header,
     font-size: 12px;
     line-height: 18px;
     color: #B2B2B2;
+    margin: 0px;
 }
 
 footer {
@@ -431,9 +513,11 @@ footer h2 {
 }
 
 .footer_content {
+    height: 310px;
     display: flex;
-    justify-content: space-around;
     width: 100%;
+    justify-content: space-around;
+    gap: 75px;
 }
 
 .footer_content p {
@@ -444,32 +528,46 @@ footer h2 {
     line-height: 115%;
     letter-spacing: 0.06em;
     color: #F1CDB3;
+    margin: 0;
 }
 
 .footer_content_questions {
+    height: 87%;
     width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 14px;
 }
 
 .footer_content_mail {
+    width: 89%;
     display: flex;
     justify-content: space-between;
 }
 
 .footer_content_phone {
+    width: 85%;
     display: flex;
     justify-content: space-between;
 }
 
 .footer_content_waiting {
-    width: 22%;
+    height: 87%;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .footer_content_Boston {
     display: flex;
     justify-content: space-between;
+    gap: 21px;
 }
 
 .footer_content_London {
+    width: 88%;
     display: flex;
     justify-content: space-between;
 }

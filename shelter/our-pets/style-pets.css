@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'Georgia';
+    src: url('../assets/fonts//georgia/Georgia.eot');
+    src: local('Georgia'),
+        url('../assets/Georgia/Georgia.eot?#iefix') format('embedded-opentype'),
+        url('../assets/Georgia/Georgia.woff') format('woff'),
+        url('../assets/Georgia/Georgia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../assets/fonts/Arial/ArialMT.eot');
+    src: local('Arial'), local('ArialMT'),
+        url('../assets/fonts/Arial/ArialMT.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Arial/ArialMT.woff') format('woff'),
+        url('../assets/fonts/Arial/ArialMT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 html {
     font-size: 16px;
     scroll-behavior: smooth;
@@ -48,7 +71,7 @@ header {
     font-weight: 400;
     font-size: 35px;
     line-height: 110%;
-    letter-spacing: .06em;
+    letter-spacing: 0.01em;
     color: #545454;
     padding-bottom: 7px;
 }
@@ -61,6 +84,7 @@ header {
     line-height: 15px;
     letter-spacing: .1em;
     color: #545454;
+    margin-left: 5px;
 }
 
 .header_nav {
@@ -111,29 +135,40 @@ header {
 main {
     background: #F6F6F6;
     height: 1342px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .Pets {
+    height: 86.4%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
 }
 
 .Pets h2 {
     text-align: center;
+    letter-spacing: 0.06em;
+    margin: 0px;
 }
 
 .Pets_content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 31px 0px;
 }
 
 .Pets_content div {
+    height: 435px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #FAFAFA;
+    gap: 30px;
 }
 
 .Pets_content p {
@@ -145,6 +180,7 @@ main {
     text-align: center;
     letter-spacing: 0.06em;
     color: #545454;
+    margin: 0px;
 }
 
 .Pets_content button {
@@ -157,9 +193,14 @@ main {
     line-height: 130%;
     letter-spacing: 0.06em;
     color: #292929;
-    padding: 15px 45px;
+    padding: 13px 42px;
     background: #FAFAFA;
+}
 
+.Pets_navigation {
+    width: 26.5%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .Pets_navigation_begin {
@@ -168,6 +209,12 @@ main {
     border: 2px solid #CDCDCD;
     border-radius: 100px;
     background: #F6F6F6;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
 }
 
 .Pets_navigation_left {
@@ -176,6 +223,12 @@ main {
     border: 2px solid #CDCDCD;
     border-radius: 100px;
     background: #F6F6F6;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
 }
 
 .Pets_navigation_page {
@@ -183,6 +236,12 @@ main {
     height: 52px;
     background: #F1CDB3;
     border-radius: 100px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
 }
 
 .Pets_navigation_right {
@@ -191,6 +250,12 @@ main {
     border: 2px solid #CDCDCD;
     border-radius: 100px;
     background: #F6F6F6;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
 }
 
 .Pets_navigation_end {
@@ -199,6 +264,12 @@ main {
     border: 2px solid #CDCDCD;
     border-radius: 100px;
     background: #F6F6F6;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
 }
 
 footer {
@@ -223,9 +294,11 @@ footer h2 {
 }
 
 .footer_content {
+    height: 310px;
     display: flex;
-    justify-content: space-around;
     width: 100%;
+    justify-content: space-around;
+    gap: 75px;
 }
 
 .footer_content p {
@@ -236,32 +309,46 @@ footer h2 {
     line-height: 115%;
     letter-spacing: 0.06em;
     color: #F1CDB3;
+    margin: 0;
 }
 
 .footer_content_questions {
+    height: 87%;
     width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 14px;
 }
 
 .footer_content_mail {
+    width: 89%;
     display: flex;
     justify-content: space-between;
 }
 
 .footer_content_phone {
+    width: 85%;
     display: flex;
     justify-content: space-between;
 }
 
 .footer_content_waiting {
-    width: 22%;
+    height: 87%;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .footer_content_Boston {
     display: flex;
     justify-content: space-between;
+    gap: 21px;
 }
 
 .footer_content_London {
+    width: 88%;
     display: flex;
     justify-content: space-between;
 }
